@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Assets/Styles/styles.css" >
+    <script src="./Assets/Scripts/app.js"></script>
+    <title>Calculator App</title>
+</head>
+<body>
+<!--Create a rectangle to hold all buttons as if it were the physical calculator-->
+    <div id="calc">
+        <form>
+            <input type="text" id="nums" readonly/>
+                <table id="calcButtons">
+                    <tr>
+                        <td><input class="bttn" id="one" type="button" value="1" /></td>
+                        <td><input class="bttn" id="two" type="button" value="2" /></td>
+                        <td><input class="bttn" id="three" type="button" value="3" /></td>
+                        <td><input class="bttn" id="plus" type="button" value="+" /></td>
+                    </tr>
+                    <tr>
+                        <td><input class="bttn" id="four" type="button" value="4" /></td>
+                        <td><input class="bttn" id="five" type="button" value="5" /></td>
+                        <td><input class="bttn" id="six" type="button" value="6" /></td>
+                        <td><input class="bttn" id="minus" type="button" value="-" /></td>
+                    </tr>
+                    <tr>
+                        <td><input class="bttn" id="seven" type="button" value="7" /></td>
+                        <td><input class="bttn" id="eight" type="button" value="8" /></td>
+                        <td><input class="bttn" id="nine" type="button" value="9" /></td>
+                        <td><input class="bttn" id="times" type="button" value="*" /></td>
+                    </tr>
+                    <tr>
+                        <td><input class="bttn" id="equals" type="button" value="=" /></td>
+                        <td><input class="bttn" id="zero" type="button" value="0" /></td>
+                        <td><input class="bttn" id="point" type="button" value="." /></td>
+                        <td><input class="bttn" id="dividedBy" type="button" value="/" /></td>                    
+                    </tr>
+                    <tr>
+                        <td colspan="4"><input class="bttn" id="clear" type="button" value="CLEAR" /></td>                  
+                    </tr>                   
+                </table>
+        </form>
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!-- 
+NOTES: tried doing it the old way but a more efficient way is use the form element.
+
+    Create a 4 by 4 button sequence with numbers 0 to 9 and the 4 basic operators. To make it fit nice included the decimal button. Thinking of adding a clear.
+    <div>
+        <table>
+            <TR>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+                <td><button>+</button></td>
+            </TR>
+            <TR>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>                    <td><button>-</button></td>
+            </TR>
+            <TR>
+                <td><button>7</button></td>
+                <td><button>8</button></td>                    <td><button>9</button></td>
+                <td><button>*</button></td>
+            </TR>
+            <TR>
+                <td ><button>.</button></td>
+                <td><button>0</button></td>
+                <td><button>=</button></td>
+                <td><button>/</button></td>
+            </TR>
+        </table>
+    </div>
+-->
